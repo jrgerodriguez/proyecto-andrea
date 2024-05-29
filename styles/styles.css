@@ -36,7 +36,7 @@ a:link {
 /* ---------- Hero --------- */
 
 .hero {
-    background-image: url(/images/baldosas.jpg);
+    background-image: url(../images/baldosas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
