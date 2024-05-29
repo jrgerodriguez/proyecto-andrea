@@ -130,3 +130,45 @@ a:focus::after,
 .hero__navbar__nav a.active::after {
     width: 100%;
 }
+
+#menu {
+    display: none;
+}
+
+/* ---------- Device --------- */
+
+@media (max-width: 650px) {
+    #menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+        z-index: 1;
+        color: white;
+    }
+
+    .hero__navbar {
+        flex-direction: row; /* Por defecto, la dirección es fila */
+        height: auto;
+        padding: 3rem;
+    }
+
+    .hero__navbar.menu-open {
+        flex-direction: column; /* Cuando el menú está abierto, cambia la dirección a columna */
+    }
+
+    .hero__navbar__logo {
+        display: none;
+    }
+
+    .hero__navbar__nav {
+        display: none;
+    }
+
+    .hero__navbar__nav a {
+        padding: 1rem;
+    }
+
+    .open {
+        display: block;
+    }
+}
