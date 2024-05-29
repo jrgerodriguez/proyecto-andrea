@@ -1,5 +1,12 @@
 /* ---------- Global --------- */
 
+.questrial-regular {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 * {
     list-style: none;
 }
@@ -16,9 +23,9 @@ html {
 }
 
 body {
+    font-family: 'Questrial', sans-serif;
     font-size: 2.5rem;
     margin: 0;
-    font-family: 'codec';
     font-style: normal;
     color: #fff;
 }
@@ -42,18 +49,18 @@ a:link {
     background-size: cover;
     position: relative;
     height: 100vh;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .hero__navbar {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     height: 10rem;
-    padding: 0 2rem; 
-    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .hero__navbar__logo {
@@ -64,7 +71,7 @@ a:link {
 }
 
 .hero__navbar__logo a img {
-    width: 9.5rem; 
+    width: 9.5rem;
     height: auto;
     display: block;
     max-width: 100%;
@@ -79,7 +86,8 @@ a:link {
 }
 
 .hero__navbar__nav a {
-    margin: 0 2rem; 
+    margin: 0 2rem;
+    font-size: 2.7rem;
 }
 
 .hero__bigimage-container {
@@ -95,7 +103,7 @@ a:link {
 }
 
 .hero__bigimage-container img {
-    max-width: 75%; 
+    max-width: 75%;
     height: auto;
 }
 
