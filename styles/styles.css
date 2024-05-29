@@ -1,21 +1,5 @@
 /* ---------- Global --------- */
 
-@font-face {
-    font-family: 'aniyah';
-    src: url('/fonts/AniyahPersonalUse.woff') format('woff2'),
-        url('/fonts/AniyahPersonalUse.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'codec';
-    src: url('/fonts/CodecColdTrial-News.woff') format('woff2'),
-        url('/fonts/CodecColdTrial-News.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     list-style: none;
 }
