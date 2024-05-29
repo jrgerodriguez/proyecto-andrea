@@ -1,3 +1,140 @@
-h1 {
-    color: red;
+/* ---------- Global --------- */
+
+@font-face {
+    font-family: 'aniyah';
+    src: url('/fonts/AniyahPersonalUse.woff') format('woff2'),
+        url('/fonts/AniyahPersonalUse.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'codec';
+    src: url('/fonts/CodecColdTrial-News.woff') format('woff2'),
+        url('/fonts/CodecColdTrial-News.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: 'codec';
+    font-style: normal;
+    color: #fff;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ---------- Hero --------- */
+
+.hero {
+    background-image: url(/images/baldosas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.hero__navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 10rem;
+    padding: 0 2rem; 
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.hero__navbar__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hero__navbar__logo a img {
+    width: 9.5rem; 
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.hero__navbar__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ac7858;
+    z-index: 1;
+}
+
+.hero__navbar__nav a {
+    margin: 0 2rem; 
+}
+
+.hero__bigimage-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.hero__bigimage-container img {
+    max-width: 100%; 
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.hero__navbar__nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ac7858;
+    transition: width 0.3s ease;
+}
+
+.hero__navbar__nav a:hover::after,
+a:focus::after,
+.hero__navbar__nav a.active::after {
+    width: 100%;
 }
