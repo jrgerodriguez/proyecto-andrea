@@ -147,13 +147,13 @@ a:focus::after,
     }
 
     .hero__navbar {
-        flex-direction: row; /* Por defecto, la dirección es fila */
+        flex-direction: row; 
         height: auto;
         padding: 3rem;
     }
 
     .hero__navbar.menu-open {
-        flex-direction: column; /* Cuando el menú está abierto, cambia la dirección a columna */
+        flex-direction: column; 
     }
 
     .hero__navbar__logo {
@@ -166,6 +166,7 @@ a:focus::after,
 
     .hero__navbar__nav a {
         padding: 1rem;
+        /* width: 100%; */ /* Para usar todo el espacio disponible */
     }
 
     .open {
