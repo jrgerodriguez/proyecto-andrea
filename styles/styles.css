@@ -23,11 +23,15 @@ html {
 }
 
 body {
+    background-image: url(../images/baldosas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
     font-family: 'Questrial', sans-serif;
     font-size: 2.5rem;
-    margin: 0;
     font-style: normal;
-    color: #fff;
+    margin: 0;
 }
 
 a:visited {
@@ -43,24 +47,20 @@ a:link {
 /* ---------- Hero --------- */
 
 .hero {
-    background-image: url(../images/baldosas.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
 
 .hero__navbar {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 10rem;
-    padding: 0 2rem;
     background-color: rgba(0, 0, 0, 0.35);
-    width: 100%;
     box-sizing: border-box;
+    display: flex;
+    height: 10rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 100%;
 }
 
 .hero__navbar__logo {
@@ -91,14 +91,14 @@ a:link {
 }
 
 .hero__bigimage-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
+    align-items: center;
     bottom: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     z-index: 0;
 }
 
@@ -115,14 +115,14 @@ a {
 }
 
 .hero__navbar__nav a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 1px;
     background-color: #ac7858;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
     transition: width 0.3s ease;
+    width: 0;
 }
 
 .hero__navbar__nav a:hover::after,
