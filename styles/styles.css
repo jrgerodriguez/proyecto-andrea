@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'aniyah'; 
+    src: url('../fonts/AniyahPersonalUse.woff2') format('woff2'),
+         url('../fonts/AniyahPersonalUse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ---------- Global --------- */
 
 .questrial-regular {
@@ -210,6 +218,7 @@ p {
 
 .historia h1 {
     grid-column: 1/3;
+    font-family: 'aniyah';
 }
 
 .historia .img1 {
