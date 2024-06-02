@@ -162,12 +162,13 @@ a:focus::after,
         flex-direction: column;
         align-items: center;
         height: auto;
-        padding: 1.5rem;
+        padding: 3rem;
         position: relative;
     }
 
     .hero__navbar.menu-open {
         flex-direction: column;
+        height: auto;
     }
 
     .hero__navbar__logo {
