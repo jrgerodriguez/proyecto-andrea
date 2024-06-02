@@ -177,6 +177,7 @@ a:focus::after,
         padding: 1rem;
         /* width: 100%; */
         /* Para usar todo el espacio disponible */
+        font-size: 2rem;
     }
 
     .open {
