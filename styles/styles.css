@@ -153,12 +153,17 @@ a:focus::after,
         border: none;
         z-index: 1;
         color: white;
+        position: absolute;
+        left: 0;
+        top: 1rem;
     }
 
     .hero__navbar {
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         height: auto;
-        padding: 3rem;
+        padding: 1.5rem;
+        position: relative;
     }
 
     .hero__navbar.menu-open {
@@ -175,9 +180,9 @@ a:focus::after,
 
     .hero__navbar__nav a {
         padding: 1rem;
-        /* width: 100%; */
-        /* Para usar todo el espacio disponible */
-        font-size: 2rem;
+        display: block;
+        font-size: 1.7rem;
+        text-align: center;
     }
 
     .open {
