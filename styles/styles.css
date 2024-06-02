@@ -271,12 +271,12 @@ main img {
 
     .historia p,
     .historia img,
-    .historia .img1, 
+    .historia .img1,
     .historia .para1 {
         grid-column: 1/2;
     }
 
-    .historia .img1{
+    .historia .img1 {
         width: 100%;
     }
 
@@ -287,6 +287,17 @@ main img {
 }
 
 @media (max-width: 750px) {
+
+    #historia-body {
+        background-color: black;
+        background-image: url(../images/baldosas.jpg);
+        background-position: center;
+        background-repeat: repeat;
+        background-size: initial;
+        background-attachment: fixed;
+        text-align: center;
+    }
+
     .historia .img1 {
         display: none;
     }
