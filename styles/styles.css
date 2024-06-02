@@ -265,8 +265,7 @@ main img {
 
 .para3,
 .para4,
-.para7,
-.para8 {
+.para7 {
     grid-column: 1/3;
 }
 
