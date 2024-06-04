@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 </head>
 
@@ -16,13 +17,15 @@
 
     <div class="hero">
         <div class="hero__navbar">
-            
+
             <div class="hero__navbar__logo">
                 <a href="index.html"><img src="images/logo5.png" alt="logo"></a>
             </div>
 
             <button id="menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="35"
+                    height="35" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M4 6l16 0" />
                     <path d="M4 12l16 0" />
@@ -40,13 +43,17 @@
 
         </div>
         <div class="hero__bigimage-container">
-            <img src="images/heropng.png" alt="titulo">
+            <img src="images/heropng.png" alt="titulo" data-aos="fade-up" data-aos-duration="2000">
         </div>
     </div>
 
     <main></main>
     <footer></footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="scripts/scripts.js"></script>
 </body>
 
