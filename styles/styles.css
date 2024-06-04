@@ -243,6 +243,7 @@ main img {
 
 .historia .img1,
 .historia .img-alternate {
+    
     display: block;
     grid-column: 1/3;
     height: auto;
