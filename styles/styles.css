@@ -305,6 +305,11 @@ main img {
         text-align: center;
     }
 
+    .historia img, 
+    .historia p {
+        max-width: 100%;
+    }
+
     .historia .img1 {
         display: none;
     }
@@ -321,5 +326,11 @@ main img {
 
     .historia p {
         font-size: 1.7rem;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 85%;
+        overflow: hidden;
     }
 }
