@@ -31,12 +31,12 @@ html {
 }
 
 body {
-    background-image: url(../images/baldosas.jpg);
+    background-image: url(../images/baldosas2.png);
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    color: #ffffff;
     font-family: 'Questrial', sans-serif;
     font-size: 2.5rem;
     font-style: normal;
@@ -90,7 +90,7 @@ a:link {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ac7858;
+    color: #ffffff;
     z-index: 1;
 }
 
@@ -124,7 +124,7 @@ a {
 }
 
 .hero__navbar__nav a::after {
-    background-color: #ac7858;
+    background-color: #ffffff;
     bottom: 0;
     content: '';
     height: 1px;
@@ -152,7 +152,7 @@ a:focus::after,
         background-color: transparent;
         border: none;
         z-index: 1;
-        color: white;
+        color: #ffffff;
         position: absolute;
         left: 0;
         top: 1rem;
@@ -196,7 +196,7 @@ a:focus::after,
 
 #historia-body {
     background-color: black;
-    background-image: url(../images/baldosas.jpg);
+    background-image: url(../images/baldosas2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -224,7 +224,7 @@ main img {
 }
 
 .historia p {
-    color: #ac7858;
+    color: #ffffff;
     font-size: 2.3rem;
     line-height: 1.3;
     margin: 0;
@@ -233,7 +233,7 @@ main img {
 }
 
 .historia h1 {
-    color: #caa58a;
+    color: #ffffff;
     grid-column: 1/3;
     font-family: 'aniyah';
     font-size: 4rem;
@@ -297,7 +297,7 @@ main img {
 
     #historia-body {
         background-color: black;
-        background-image: url(../images/baldosas.jpg);
+        background-image: url(../images/baldosas2.png);
         background-position: center;
         background-repeat: repeat;
         background-size: initial;
