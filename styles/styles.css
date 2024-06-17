@@ -80,7 +80,7 @@ a:link {
 }
 
 .hero__navbar__logo a img {
-    width: 9.5rem;
+    width: 9rem;
     height: auto;
     display: block;
     max-width: 100%;
@@ -112,7 +112,7 @@ a:link {
 }
 
 .hero__bigimage-container img {
-    max-width: 75%;
+    max-width: 100%;
     height: auto;
 }
 
