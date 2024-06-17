@@ -379,7 +379,7 @@ main img {
 }
 
 figcaption {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-style: italic;
 }
 
@@ -397,9 +397,15 @@ figcaption {
     height: auto;
 }
 
+@media (max-width:1000px) {
+    figcaption {
+        font-size: 1.4rem;
+    }
+}
+
 @media (max-width:750px) {
     .procesos p {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     #corbataimg,
@@ -409,6 +415,10 @@ figcaption {
     #prensa-volanteimg,
     #cucharonimg {
         width: 100%;
+    }
+
+    figcaption {
+        font-size: 1.1rem;
     }
 
 }
