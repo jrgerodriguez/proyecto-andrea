@@ -388,19 +388,31 @@ figcaption {
 }
 
 #corbataimg,
-#trepaimg {
-    width: 525px;
+#trepaimg,
+#cernidorimg,
+#tapaderaimg,
+#prensa-volanteimg,
+#cucharonimg {
+    width: 650px;
     height: auto;
 }
 
-@media (max-width:750px) {
-.procesos p{
-    font-size: 1.7rem;
+figcaption {
+    width: 650px;
 }
 
-#corbataimg,
-#trepaimg {
-    width: 100%;
-}
+@media (max-width:750px) {
+    .procesos p {
+        font-size: 1.7rem;
+    }
+
+    #corbataimg,
+    #trepaimg,
+    #cernidorimg,
+    #tapaderaimg,
+    #prensa-volanteimg,
+    #cucharonimg {
+        width: 100%;
+    }
 
 }
