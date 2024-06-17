@@ -296,6 +296,10 @@ main img {
         grid-column: 1/2;
         font-size: 3rem;
     }
+
+    .procesos h1 {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 750px) {
@@ -326,7 +330,8 @@ main img {
         width: 100%;
     }
 
-    .historia h1 {
+    .historia h1,
+    .procesos h1 {
         font-size: 2.5rem;
     }
 
@@ -358,13 +363,20 @@ main img {
 
 /* ---- Procesos ---- */
 
+.procesos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .procesos p {
     color: #ffffff;
     font-size: 2.3rem;
     line-height: 1.3;
     padding: 0;
     text-align: justify;
-    margin: 6rem 0;
+    margin: 2rem 0;
 }
 
 figcaption {
@@ -374,4 +386,10 @@ figcaption {
 
 .procesos img {
     max-width: 100%;
+}
+
+#corbataimg, 
+#trepaimg {
+    width: 525px;
+    height: auto;
 }
