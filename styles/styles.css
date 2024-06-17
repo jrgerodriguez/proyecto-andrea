@@ -112,7 +112,7 @@ a:link {
 }
 
 .hero__bigimage-container img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -188,6 +188,10 @@ a:focus::after,
 
     .open {
         display: block;
+    }
+
+    .hero__bigimage-container img {
+        max-width: 87%;
     }
 }
 
