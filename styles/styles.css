@@ -397,13 +397,9 @@ figcaption {
     height: auto;
 }
 
-figcaption {
-    width: 650px;
-}
-
 @media (max-width:750px) {
     .procesos p {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     #corbataimg,
@@ -415,4 +411,10 @@ figcaption {
         width: 100%;
     }
 
+}
+
+@media (min-width:1000px) {
+    figcaption {
+        width: 650px;
+    }
 }
