@@ -334,3 +334,17 @@ main img {
         overflow: hidden;
     }
 }
+
+.footer {
+    background-color: black;
+    height: 10rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#current-year {
+    color: white;
+    font-size: 2rem;
+}
