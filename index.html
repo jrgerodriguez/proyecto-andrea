@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <!-- <link rel="apple-touch-icon" href="assets/img/apple-icon.png"> -->
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
@@ -29,9 +29,32 @@ https://templatemo.com/tm-559-zay-shop
 </head>
 
 <style>
+    body {
+        background-image: url(images/baldosas2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+    }
+
     .navbar-brand img {
         width: 90px;
         height: auto;
+    }
+
+    .heroimgcontainer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%; 
+    }
+
+    .heroimgcontainer img {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        width: 700px;
     }
 
     @media (max-width: 750px) {
@@ -50,7 +73,7 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand text-success logo align-self-center" href="index.html">
-                <img src="images/logo2.png" alt="">
+                <img src="images/logo6.png" alt="">
             </a>
 
             <button id="menuButton" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -123,12 +146,8 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Start Categories of The Month -->
     <section class="container py-5">
         <div class="row text-center pt-3">
-            <div class="col-lg-8 m-auto">
-                <h1 class="heroh1 display-4 h1">Memoria En Cada Paso</h1>
-                <p>
-                    Baldosas del Palacio Nacional
-                </p>
-                <hr>
+            <div class="col-lg-8 m-auto heroimgcontainer">
+                <img src="images/hero2.png" alt="">
             </div>
         </div>
         <div class="row">
