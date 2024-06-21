@@ -207,6 +207,6 @@ body, ul, li, p, a, label, input, div {
 
 @media (max-width: 750px) {
   .h1 {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
