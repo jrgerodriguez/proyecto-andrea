@@ -29,6 +29,13 @@ Table of contents
 
 
 /* Typography */
+
+.parisienne-regular {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body, ul, li, p, a, label, input, div {
   font-family: 'Roboto', sans-serif;
   font-size: 18px !important;
@@ -37,9 +44,13 @@ body, ul, li, p, a, label, input, div {
 
 .h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 48px !important;
-  font-weight: 200 !important;
+  font-size: 65px;
+  font-weight: 200;
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
+
 .h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 30px !important;
@@ -193,3 +204,9 @@ body, ul, li, p, a, label, input, div {
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {}
+
+@media (max-width: 750px) {
+  .h1 {
+    font-size: 25px;
+  }
+}
