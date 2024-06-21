@@ -2,126 +2,270 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memoria En Cada Paso</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Historia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+    <style>
+        .parisienne-regular {
+            font-family: "Parisienne", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            background-image: url(images/baldosas2.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+        .seccion-hero {
+            background-image: url(images/fondo.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+        .navbar-brand img {
+            width: 90px;
+            height: auto;
+        }
+
+        .heroimgcontainer {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        .heroimgcontainer img {
+            display: block;
+            height: auto;
+            margin: 0 auto;
+            width: 700px;
+            border-radius: 20px;
+        }
+
+        .historia-title {
+            font-family: "Parisienne", cursive;
+            font-size: 60px;
+            text-align: center;
+            color: #ffff;
+        }
+
+        .blockquote,
+        figcaption {
+            color: white;
+        }
+
+        .col p {
+            text-align: justify;
+            margin-top: 50px;
+        }
+
+        .col img {
+            width: 100%;
+            border-radius: 5px;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .historia {
+            background-color: white;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 1000px) {
+            .historia .row .col {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+
+            .col img {
+                margin-top: 50px;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .palacionherocontainer img {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+            }
+
+            .heroimgcontainer img {
+                max-width: 87%;
+            }
+
+            .historia-title {
+                font-size: 35px;
+                padding: 0 5px;
+            }
+
+            .blockquote-footer,
+            .blockquote p  {
+                font-size: 12px !important;;
+                padding: 0 5px;
+            }
+        }
+    </style>
 </head>
 
-<body id="historia-body">
-    <header></header>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand text-success logo align-self-center" href="index.html">
+                <img src="images/logo6.png" alt="">
+            </a>
+            <button id="menuButton" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+                id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Procesos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Pisos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
 
-    <!-- <div class="hero"> -->
-    <div class="hero__navbar historia-hero_navbar">
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 
-        <div class="hero__navbar__logo">
-            <a href="index.html"><img src="images/logo6.png" alt="logo"></a>
+    <!-- Start Section -->
+    <section class="bg-light py-5 seccion-hero">
+        <div class="container my-4">
+            <div class="row text-center py-3">
+                <div class="col-lg-8 m-auto">
+                    <h1 class="historia-title">Palacio Nacional de El Salvador</h1>
+                    <figure class="text-end">
+                        <blockquote class="blockquote">
+                            <br>
+                            <p>El Palacio Nacional es el edificio más emblemático que tiene El Salvador.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            María Isaura Aráuz<cite title="Source Title">La Palabra Universitaria</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section -->
+
+    <!-- Historia Starts -->
+    <div class="historia">
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
+                    <p>Durante la administración del General Gerardo Barrios (1860-1863) se ideó construir un palacio
+                        nacional para albergar las dependencias gubernamentales. El primer palacio se construyó entre
+                        1866 y 1870, pero un incendio en 1899 lo destruyó junto con valiosos archivos y obras de arte.
+                        El actual Palacio Nacional, diseñado por el ingeniero José Emilio Alcaine y construido entre
+                        1905 y 1911, presenta una arquitectura neoclásica con volúmenes simétricos y detalles
+                        decorativos.</p>
+                    <img src="images/palacio2.jpeg" alt="">
+                </div>
+                <div class="col">
+                    <img src="images/palacio4.jpg" alt="">
+                    <p>Inaugurado el 1 de marzo de 1911, se llamó "Palacio del Café" debido a un decreto que destinaba
+                        fondos de la exportación de café para su construcción, sumando un total de 50.000 colones. El
+                        edificio, con un perímetro de 74 metros por lado y un patio central en forma de cruz griega, se
+                        organiza como un claustro. Cuenta con cuatro salas principales: Roja, Azul, Rosa y Amarilla,
+                        además de sesenta y cuatro salas grandes, cuarenta habitaciones pequeñas, ocho cuartos de
+                        servicio y dos sótanos.</p>
+                </div>
+                <div class="col">
+                    <p>La Sala Roja, la más lujosa, destaca por su decoración en rojo, blanco y dorado de estilo
+                        renacentista francés. El Salón Azul fue sede de la Asamblea Legislativa hasta 1974, con
+                        decoraciones en azul y blanco. La Sala Rosa albergó la Corte Suprema hasta 1974, y la Sala
+                        Amarilla, utilizada para reuniones diplomáticas, fue la oficina del Presidente hasta 1930.</p>
+                    <img src="images/palacio7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Historia Ends -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
         </div>
 
-        <button id="menu">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="35" height="35"
-                viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 6l16 0" />
-                <path d="M4 12l16 0" />
-                <path d="M4 18l16 0" />
-            </svg>
-        </button>
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            &copy; 2024
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <nav class="hero__navbar__nav">
-            <a href="index.html">Inicio</a>
-            <a href="historia.html" class="active">Historia</a>
-            <a href="procesos.html">Procesos</a>
-            <a href="">Pisos</a>
-        </nav>
-    </div>
-    <!-- </div> -->
-
-    <main class="container historia">
-        <h1>Palacio Nacional de El Salvador</h1>
-
-        <img src="images/image10.jpg" alt="foto1" class="img1" data-aos="fade-down">
-
-        <img src="images/image11.jpg" alt="foto1" class="img-alternate" data-aos="fade-down">
-
-        <img src="images/image9.jpg" alt="" class="img2" data-aos="fade-right">
-
-        <p class="para1">Durante la administración del General Gerardo Barrios (1860-1863), surgió la idea de construir
-            un palacio
-            nacional para albergar las diferentes dependencias gubernamentales de la época. Con este objetivo se
-            designaron las cuadras al oeste de la actual Plaza Barrios o Plaza Cívica.<br> <br>El primer palacio se
-            construyó
-            entre 1866 y 1870.
-            Sin embargo, el 19 de noviembre de 1899, un incendio redujo el edificio a escombros; perdiéndose también
-            valiosos archivos históricos nacionales e invaluables obras de arte.</p>
-
-        <p class="para2">El actual Palacio Nacional fue diseñado por el ingeniero José Emilio Alcaine y fue construido
-            por Don
-            Pascasio González bajo el mando de Don José María Peralta.<br> <br>Fue construido entre 1905 y 1911 bajo la
-            dirección
-            de Don José María Peralta Lagos.<br> Su arquitectura es neoclásica, muy de moda a principios del siglo XX, y
-            esto se evidencia en sus volúmenes simétricos, detalles decorativos y distribución de espacios interiores
-            conectados por un patio central en forma de cruz griega.</p>
-
-        <img src="images/image12.jpg" alt="" class="img3" data-aos="fade-left">
-
-        <p class="para3">Inaugurado el 1 de marzo de 1911, originalmente se llamó "Palacio del Café" porque un decreto
-            legislativo
-            estipulaba que por cada quintal de café exportado se invertiría un colón en su construcción.<br> Se
-            utilizaron
-            un total de 50.000 colones.</p>
-
-        <p class="para4">El edificio tiene un perímetro de 74 metros por cada lado y cuenta con un patio central en
-            forma de cruz
-            griega, dentro del cual se ubica el jardín central. Por su organización espacial se define como un claustro.
-        </p>
-
-        <img src="images/image5.png" alt="" class="img4" data-aos="fade-right">
-
-        <p class="para5">El palacio tiene 4 salas principales: roja, azul, rosa y amarilla, sesenta y cuatro salas
-            grandes, cuarenta
-            habitaciones pequeñas, ocho cuartos de servicio y dos grandes sótanos, uno al este y otro al oeste.<br>
-            Entre las numerosas estancias, la Sala Roja y la Sala Azul destacan por su elegancia y belleza.
-        </p>
-
-        <p class="para6">Sin duda la sala más lujosa y detallada de la República, la Sala Roja está ubicada encima del
-            salón principal
-            y forma parte de la gran escalera del palacio.<br> Su nombre se debe a que el rojo domina la decoración
-            junto
-            con el blanco y el dorado.<br> El salón de estilo renacentista francés es una combinación perfecta de
-            elementos
-            barrocos y clásicos.<br> El lujo y el gusto de esta estancia no envidian a otras estancias similares en
-            Europa y
-            América.</p>
-
-        <img src="images/image4.jpg" alt="" class="img5" data-aos="fade-left">
-
-        <p class="para7"><strong>-Salón Azul:</strong> Este histórico lugar, ubicado en el segundo piso del lado oeste
-            del edificio,
-            fue sede de la Asamblea Legislativa hasta 1974. En él predominan los colores de la República - azul y
-            blanco, con una gran cantidad de decoraciones.<br>
-            <strong>-Salón Rosa:</strong> Donde funcionó la Corte Suprema hasta 1974.<br>
-            <strong>-Salón Amarillo:</strong> Donde
-            estuvo ubicada
-            la Oficina del Presidente hasta 1930. Aquí se llevan a cabo reuniones de negociación y recepción del
-            personal diplomático y otras funciones.
-        </p>
-    </main>
-
-    <footer class="footer">
-        <p>© <span id="current-year"></span></p>
     </footer>
+    <!-- End Footer -->
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="scripts/scripts.js"></script>
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
 </body>
 
 </html>
