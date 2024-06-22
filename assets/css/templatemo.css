@@ -80,7 +80,7 @@ body, ul, li, p, a, label, input, div {
 }
 
 .btn-success:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .pagination .page-link:hover {color: #000;}
 .pagination .page-link:hover, .pagination .page-link.active {
