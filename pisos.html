@@ -91,6 +91,7 @@
             grid-template-columns: 45% 55%;
             gap: 20px;
         }
+
         .grid-item {
             display: flex;
             align-items: center;
@@ -173,6 +174,14 @@
                 font-size: 12px !important;
                 ;
                 padding: 0 5px;
+            }
+
+        }
+
+        @media (max-width: 700px) {
+            .carousel-control-prev,
+            .carousel-control-next {
+                width: 20%;
             }
         }
     </style>
