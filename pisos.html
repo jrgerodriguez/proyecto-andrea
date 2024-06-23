@@ -74,40 +74,81 @@
             text-align: center;
         }
 
-        .card figcaption {
-            font-size: 10px;
-            font-style: italic;
-        }
-
-        .blockquote-footer {
-            color: #fff;
-        }
-
-        .imgfooter {
-            font-size: 13px;
-            font-style: italic;
-            text-align: left;
-        }
-
-        .card {
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-            background-color: #212934;
-            transition: transform 0.3s, box-shadow 0.3s;
-            color: white;
-            width: 100%;
-            margin: 0 auto;
-        }
-
         .row {
             margin: 0 auto;
             max-width: 100%;
         }
 
+
+        .carousel-container {
+            width: 90%;
+            margin: auto;
+            margin: 70px 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 45% 55%;
+            gap: 20px;
+        }
+        .grid-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Carousel */
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 10%;
+            height: auto;
+            background-color: transparent;
+            border: none;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            color: white;
+        }
+
+        .carousel-control-prev-icon::after,
+        .carousel-control-next-icon::after {
+            font-size: 30px;
+            color: white;
+        }
+
+        .carousel-control-prev-icon {
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M11.354 1.146a.5.5 0 0 1 0 .708L5.707 7.5l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"%3E%3C/path%3E%3C/svg%3E');
+        }
+
+        .carousel-control-next-icon {
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M4.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"%3E%3C/path%3E%3C/svg%3E');
+        }
+
+
+
         @media (max-width: 1000px) {
             .col-md-4 {
                 width: 100%;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+                margin: 70px auto;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                width: 15%;
             }
         }
 
@@ -199,7 +240,9 @@
                     <figure class="text-end">
                         <blockquote class="blockquote">
                             <br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam similique in ratione facere tempora, rerum quas molestiae aliquam sint nisi animi, ex natus ad quam at mollitia molestias nobis.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam similique in ratione
+                                facere tempora, rerum quas molestiae aliquam sint nisi animi, ex natus ad quam at
+                                mollitia molestias nobis.</p>
                         </blockquote>
                     </figure>
                 </div>
@@ -209,8 +252,35 @@
     <!-- End Section -->
 
     <!-- Start Content -->
+    <div class="carousel-container grid">
+        <div class="grid-item">
+            <img src="images/planta1.png" alt="">
+        </div>
 
-
+        <div id="carouselExampleAutoplaying" class="carousel slide grid-item" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/planta1/6.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/planta1/7.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/planta1/8.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
     <!-- End Content -->
 
 
