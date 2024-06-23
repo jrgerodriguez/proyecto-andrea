@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Historia</title>
+    <title>Pisos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,7 +33,7 @@
         }
 
         .seccion-hero {
-            background-image: url(images/fondo2.png);
+            background-image: url(images/fondo-pisos.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -71,26 +71,12 @@
         .blockquote,
         figcaption {
             color: white;
+            text-align: center;
         }
 
-        .col p {
-            text-align: justify;
-            margin-top: 50px;
-        }
-
-        .col img {
-            width: 100%;
-            border-radius: 5px;
-            height: auto;
-            max-width: 100%;
-        }
-
-        .historia {
-            padding: 50px;
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
-            color: white;
+        .card figcaption {
+            font-size: 10px;
+            font-style: italic;
         }
 
         .blockquote-footer {
@@ -103,14 +89,25 @@
             text-align: left;
         }
 
-        @media (max-width: 1000px) {
-            .historia .row .col {
-                flex-basis: 100%;
-                max-width: 100%;
-            }
+        .card {
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            background-color: #212934;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: white;
+            width: 100%;
+            margin: 0 auto;
+        }
 
-            .col img {
-                margin-top: 50px;
+        .row {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        @media (max-width: 1000px) {
+            .col-md-4 {
+                width: 100%;
             }
         }
 
@@ -198,15 +195,12 @@
         <div class="container my-4">
             <div class="row text-center py-3">
                 <div class="col-lg-8 m-auto">
-                    <h1 class="historia-title">Palacio Nacional de El Salvador</h1>
+                    <h1 class="historia-title">Pisos</h1>
                     <figure class="text-end">
                         <blockquote class="blockquote">
                             <br>
-                            <p>El Palacio Nacional es el edificio más emblemático que tiene El Salvador.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam similique in ratione facere tempora, rerum quas molestiae aliquam sint nisi animi, ex natus ad quam at mollitia molestias nobis.</p>
                         </blockquote>
-                        <figcaption class="blockquote-footer">
-                            María Isaura Aráuz<cite title="Source Title"> La Palabra Universitaria</cite>
-                        </figcaption>
                     </figure>
                 </div>
             </div>
@@ -214,48 +208,10 @@
     </section>
     <!-- End Section -->
 
-    <!-- Historia Starts -->
-    <div class="historia">
-        <div class="container text-center">
-            <div class="row align-items-start">
-                <div class="col">
-                    <p>Durante la administración del General Gerardo Barrios (1860-1863) se ideó construir un palacio
-                        nacional para albergar las dependencias gubernamentales. El primer palacio se construyó entre
-                        1866 y 1870, pero un incendio en 1899 lo destruyó junto con valiosos archivos y obras de arte.
-                        El actual Palacio Nacional, diseñado por el ingeniero José Emilio Alcaine y construido entre
-                        1905 y 1911, presenta una arquitectura neoclásica con volúmenes simétricos y detalles
-                        decorativos.</p>
-                    <figure>
-                        <img src="images/palacio2.jpeg" alt="">
-                        <figcaption class="imgfooter">laprensagrafica 2020</figcaption>
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure>
-                        <img src="images/palacio4.jpg" alt="">
-                        <figcaption class="imgfooter">Pinterest 2023</figcaption>
-                    </figure>
-                    <p>Inaugurado el 1 de marzo de 1911, se llamó "Palacio del Café" debido a un decreto que destinaba
-                        fondos de la exportación de café para su construcción, sumando un total de 50.000 colones. El
-                        edificio, con un perímetro de 74 metros por lado y un patio central en forma de cruz griega, se
-                        organiza como un claustro. Cuenta con cuatro salas principales: Roja, Azul, Rosa y Amarilla,
-                        además de sesenta y cuatro salas grandes, cuarenta habitaciones pequeñas, ocho cuartos de
-                        servicio y dos sótanos.</p>
-                </div>
-                <div class="col">
-                    <p>La Sala Roja, la más lujosa, destaca por su decoración en rojo, blanco y dorado de estilo
-                        renacentista francés. El Salón Azul fue sede de la Asamblea Legislativa hasta 1974, con
-                        decoraciones en azul y blanco. La Sala Rosa albergó la Corte Suprema hasta 1974, y la Sala
-                        Amarilla, utilizada para reuniones diplomáticas, fue la oficina del Presidente hasta 1930.</p>
-                    <figure>
-                        <img src="images/palacio7.jpg" alt="">
-                        <figcaption class="imgfooter">Flickr 2021</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Historia Ends -->
+    <!-- Start Content -->
+
+
+    <!-- End Content -->
 
 
     <!-- Start Footer -->
