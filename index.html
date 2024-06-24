@@ -23,46 +23,70 @@
 
 -->
 
-<style>
-    body {
-        background-image: url(images/baldosas2.png);
-        background-repeat: repeat;
-        background-size: auto;
-        margin: 0;
-    }
+    <style>
+        body {
+            background-image: url(images/baldosas2.png);
+            background-repeat: repeat;
+            background-size: auto;
+            margin: 0;
+        }
 
-    .navbar-brand img {
-        width: 90px;
-        height: auto;
-    }
+        .navbar-brand img {
+            width: 90px;
+            height: auto;
+        }
 
-    .heroimgcontainer {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    .heroimgcontainer img {
-        display: block;
-        height: auto;
-        margin: 0 auto;
-        width: 700px;
-    }
-
-    @media (max-width: 750px) {
-        .palacionherocontainer img {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
+        .heroimgcontainer {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
         }
 
         .heroimgcontainer img {
-            max-width: 87%;
+            display: block;
+            height: auto;
+            margin: 0 auto;
+            width: 700px;
         }
-    }
-</style>
+
+        .palacioherocontainer {
+            /* Asegúrate de que el contenedor también se ajuste correctamente */
+            width: 100%;
+            position: relative;
+            /* Si necesitas posicionar elementos dentro del contenedor */
+        }
+
+        .palacioherocontainer picture {
+            display: block;
+            /* Asegura que el elemento 'picture' se comporte como un bloque */
+        }
+
+        .palacioherocontainer picture img {
+            width: 100%;
+            /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+            height: auto;
+            /* Mantiene las proporciones de la imagen */
+            display: block;
+            /* Elimina cualquier espacio en blanco debajo de la imagen */
+            object-fit: cover;
+            /* Opcional: Ajusta cómo se escala la imagen dentro de su contenedor */
+        }
+
+
+        @media (max-width: 750px) {
+            .palacionherocontainer img {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+            }
+
+            .heroimgcontainer img {
+                max-width: 87%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -108,7 +132,7 @@
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
-            <div class="w-                     <i class=" fa fa-fw fa-user text-dark mr-3"></i>
+            <div class="w-100 pt-1 mb-5 text-right"> <i class="fa fa-fw fa-user text-dark mr-3"></i>
                 <span
                     class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                 </a>
@@ -130,11 +154,11 @@
 
     <!-- Start Banner Hero -->
     <!-- Start Banner Hero -->
-    <div id="template-mo-zay-hero-carousel" data-bs-ride="carousel">
+    <div>
         <div class="palacioherocontainer">
             <picture>
                 <source srcset="images/palaciohero2.jpg" media="(max-width: 600px)">
-                <img class="img-fluid" src="images/palaciohero.jpg" alt="">
+                <img src="images/palaciohero.jpg" alt="">
             </picture>
         </div>
     </div>
