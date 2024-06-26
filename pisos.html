@@ -6,8 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="preload" href="images/planta1.png" as="image">
-
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -19,8 +17,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-
-    <link rel="preload" href="images/planta1.png" as="image">
 
     <style>
         .parisienne-regular {
@@ -112,6 +108,11 @@
             display: block;
         }
 
+        .container {
+            max-width: 90%;
+            margin: 70px auto;
+        }
+
         /* Carousel */
 
         .carousel-control-prev,
@@ -143,6 +144,21 @@
             background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M4.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"%3E%3C/path%3E%3C/svg%3E');
         }
 
+        .p-container {
+            color: white;
+            text-align: center;
+        }
+
+        .card {
+            padding: 45px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            background-color: #212934;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 0%;
+        }
+
         @media (max-width: 1000px) {
             .col-md-4 {
                 width: 100%;
@@ -156,6 +172,10 @@
             .carousel-control-prev,
             .carousel-control-next {
                 width: 15%;
+            }
+
+            .p-container p {
+                font-size: 12px !important;
             }
         }
 
@@ -178,7 +198,6 @@
             .blockquote-footer,
             .blockquote p {
                 font-size: 12px !important;
-                ;
                 padding: 0 5px;
             }
 
@@ -368,7 +387,7 @@
     <div class="carousel-container grid">
         <div class="grid-item">
             <figure class="carousel2-figure">
-                <img src="images/2planta.png" alt="">
+                <img src="images/2planta.webp" alt="">
                 <figcaption>Planta Arquitectónica 2</figcaption>
             </figure>
         </div>
@@ -378,76 +397,76 @@
             <div id="carouselExampleAutoplaying2" class="carousel slide grid-item" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/planta2/31.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/31.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/32.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/32.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/33.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/33.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/34.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/34.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/35.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/35.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/36.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/36.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/37.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/37.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/38.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/38.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/39.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/39.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/40.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/40.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/41.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/41.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/42.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/42.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/43.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/43.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/44.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/44.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/45.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/45.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/46.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/46.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/47.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/47.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/48.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/48.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/49.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/49.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/50.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/50.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/51.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/51.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/52.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/52.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/53.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/53.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/planta2/54.png" class="d-block w-100" alt="...">
+                        <img src="images/planta2/54.webp" class="d-block w-100" alt="...">
                     </div>
 
                 </div>
@@ -465,6 +484,21 @@
         </div>
     </div>
     <!-- End Carousel 2 -->
+
+
+
+    <div class="p-container card container">
+        <p>El Palacio Nacional de El Salvador cuenta con un total de 105 salones. Dentro de estos, se pueden observar
+            diferentes tipologías en sus pisos, los cuales han sido fabricados mediante una técnica ancestral y son
+            conocidos como pisos hidráulicos.
+
+            Estas tipologías presentan diversos estilos, tales como Art Deco, Op-Art y Art Nouveau. La mayoría de los
+            pisos tienen una forma cuadrada de 20 x 20 cm, aunque en algunos casos se pueden encontrar pisos de forma
+            hexagonal que también mantienen las dimensiones de 20 x 20 cm.
+
+            Los pisos están compuestos por diversas piezas que, al unirse, conforman un conjunto denominado "pisos de
+            alfombra". Todos ellos cuentan con una cenefa que les otorga la apariencia de una alfombra.</p>
+    </div>
 
 
 
